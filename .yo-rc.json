@@ -1,0 +1,17 @@
+{
+  "generator-plugin-wp": {
+    "name": "KSP Mission Tracker",
+    "homepage": "http://camdensegal.com",
+    "description": "A mission tracker for Kerbal Space Program",
+    "version": "0.0.0",
+    "author": "Camden Segal",
+    "authoremail": "camden@camdensegal.com",
+    "authorurl": "http://camdensegal.com",
+    "license": "GPLv2",
+    "slug": "ksp-mission-tracker",
+    "classname": "KSP_Mission_Tracker",
+    "classprefix": "KSPMT_",
+    "prefix": "ksp_mission_tracker",
+    "year": 2016
+  }
+}
