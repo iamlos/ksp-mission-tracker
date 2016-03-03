@@ -1,7 +1,7 @@
 <?php
 /**
  * KSP Mission Tracker Frontend
- * @version 0.0.0
+ * @version 0.1.0
  * @package KSP Mission Tracker
  */
 
@@ -10,14 +10,14 @@ class KSPMT_Frontend {
 	 * Parent plugin class
 	 *
 	 * @var   class
-	 * @since NEXT
+	 * @since 0.1.0
 	 */
 	protected $plugin = null;
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -29,7 +29,7 @@ class KSPMT_Frontend {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -39,7 +39,7 @@ class KSPMT_Frontend {
 	/**
 	 * Output mission info with it's contents.
 	 *
-	 * @since NEXT
+	 * @since 0.1.0
 	 * @param string $content The post content.
 	 * @return [type] [description]
 	 */

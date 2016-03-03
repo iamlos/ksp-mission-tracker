@@ -3,7 +3,7 @@
  * Plugin Name: KSP Mission Tracker
  * Plugin URI:  http://camdensegal.com
  * Description: A mission tracker for Kerbal Space Program
- * Version:     0.0.0
+ * Version:     0.1.0
  * Author:      Camden Segal
  * Author URI:  http://camdensegal.com
  * Donate link: http://camdensegal.com
@@ -38,7 +38,7 @@
 /**
  * Autoloads files with classes when needed
  *
- * @since  NEXT
+ * @since  0.1.0
  * @param  string $class_name Name of the class being requested.
  * @return void
  */
@@ -60,7 +60,7 @@ spl_autoload_register( 'ksp_mission_tracker_autoload_classes' );
 /**
  * Main initiation class
  *
- * @since  NEXT
+ * @since  0.1.0
  * @var  string $version  Plugin version
  * @var  string $basename Plugin basename
  * @var  string $url      Plugin URL
@@ -72,15 +72,15 @@ class KSP_Mission_Tracker {
 	 * Current version
 	 *
 	 * @var  string
-	 * @since  NEXT
+	 * @since  0.1.0
 	 */
-	const VERSION = '0.0.0';
+	const VERSION = '0.1.0';
 
 	/**
 	 * URL of plugin directory
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.1.0
 	 */
 	protected $url = '';
 
@@ -88,7 +88,7 @@ class KSP_Mission_Tracker {
 	 * Path of plugin directory
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.1.0
 	 */
 	protected $path = '';
 
@@ -96,7 +96,7 @@ class KSP_Mission_Tracker {
 	 * Plugin basename
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.1.0
 	 */
 	protected $basename = '';
 
@@ -104,14 +104,14 @@ class KSP_Mission_Tracker {
 	 * Singleton instance of plugin
 	 *
 	 * @var KSP_Mission_Tracker
-	 * @since  NEXT
+	 * @since  0.1.0
 	 */
 	protected static $single_instance = null;
 
 	/**
 	 * Instance of KSPMT_Mission
 	 *
-	 * @since NEXT
+	 * @since 0.1.0
 	 * @var KSPMT_Mission
 	 */
 	protected $mission;
@@ -119,7 +119,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Instance of KSPMT_Frontend
 	 *
-	 * @since NEXT
+	 * @since 0.1.0
 	 * @var KSPMT_Frontend
 	 */
 	protected $frontend;
@@ -127,7 +127,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Creates or returns an instance of this class.
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return KSP_Mission_Tracker A single instance of this class.
 	 */
 	public static function get_instance() {
@@ -141,7 +141,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Sets up our plugin
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 */
 	protected function __construct() {
 		$this->basename = plugin_basename( __FILE__ );
@@ -154,7 +154,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Attach other plugin classes to the base plugin class.
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function plugin_classes() {
@@ -166,7 +166,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Add hooks and filters
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -177,7 +177,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Activate the plugin
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function _activate() {
@@ -189,7 +189,7 @@ class KSP_Mission_Tracker {
 	 * Deactivate the plugin
 	 * Uninstall routines should be in uninstall.php
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function _deactivate() {}
@@ -197,7 +197,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Init hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function init() {
@@ -210,7 +210,7 @@ class KSP_Mission_Tracker {
 	 * Check if the plugin meets requirements and
 	 * disable it if they are not present.
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return boolean result of meets_requirements
 	 */
 	public function check_requirements() {
@@ -231,7 +231,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Deactivates this plugin, hook this function on admin_init.
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function deactivate_me() {
@@ -241,7 +241,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Check that all plugin requirements are met
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return boolean True if requirements are met.
 	 */
 	public static function meets_requirements() {
@@ -254,7 +254,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Adds a notice to the dashboard if the plugin requirements are not met
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function requirements_not_met_notice() {
@@ -267,7 +267,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Magic getter for our object.
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param string $field Field to get.
 	 * @throws Exception Throws an exception if the field is invalid.
 	 * @return mixed
@@ -290,7 +290,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * Include a file from the includes directory
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param  string $filename Name of the file to be included.
 	 * @return bool   Result of include call.
 	 */
@@ -305,7 +305,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * This plugin's directory
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param  string $path (optional) appended path.
 	 * @return string       Directory and path
 	 */
@@ -318,7 +318,7 @@ class KSP_Mission_Tracker {
 	/**
 	 * This plugin's url
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param  string $path (optional) appended path.
 	 * @return string       URL and path
 	 */
@@ -333,7 +333,7 @@ class KSP_Mission_Tracker {
  * Grab the KSP_Mission_Tracker object and return it.
  * Wrapper for KSP_Mission_Tracker::get_instance()
  *
- * @since  NEXT
+ * @since  0.1.0
  * @return KSP_Mission_Tracker  Singleton instance of plugin class.
  */
 function ksp_mission_tracker() {

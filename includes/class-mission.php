@@ -2,7 +2,7 @@
 /**
  * KSP Mission Tracker Mission
  *
- * @version 0.0.0
+ * @version 0.1.0
  * @package KSP Mission Tracker
  */
 
@@ -14,7 +14,7 @@ class KSPMT_Mission extends CPT_Core {
 	 * Parent plugin class
 	 *
 	 * @var class
-	 * @since  NEXT
+	 * @since  0.1.0
 	 */
 	protected $plugin = null;
 
@@ -22,7 +22,7 @@ class KSPMT_Mission extends CPT_Core {
 	 * Constructor
 	 * Register Custom Post Types. See documentation in CPT_Core, and in wp-includes/post.php
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -41,7 +41,7 @@ class KSPMT_Mission extends CPT_Core {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -51,7 +51,7 @@ class KSPMT_Mission extends CPT_Core {
 	/**
 	 * Add custom fields to the CPT
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @return void
 	 */
 	public function fields() {
@@ -114,7 +114,7 @@ class KSPMT_Mission extends CPT_Core {
 	/**
 	 * Registers admin columns to display. Hooked in via CPT_Core.
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param  array $columns Array of registered column names/labels.
 	 * @return array          Modified array
 	 */
@@ -126,7 +126,7 @@ class KSPMT_Mission extends CPT_Core {
 	/**
 	 * Handles admin column display. Hooked in via CPT_Core.
 	 *
-	 * @since  NEXT
+	 * @since  0.1.0
 	 * @param array $column  Column currently being rendered.
 	 * @param int   $post_id ID of post to display column for.
 	 */
